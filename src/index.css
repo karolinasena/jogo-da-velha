@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #edf6f9;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #118ab2;
+  border: 1px solid #edf6f9;
+  float: left;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  color: #edf6f9;
+  width: 150px;
+  height: 150px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.game-info div {
+  font-size: 32px;
+  color: #118ab2;
+  font-weight: bold;
+}
+
+.game-info button {
+  background: #fff;
+  width: 150px;
+
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  
+  font-size: 14px;
+  color: #0077b6;
+}
